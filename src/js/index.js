@@ -9,3 +9,11 @@ starPointElemente.textContent= 'hola'
 
 
 console.log(`Soy un ${starPointElemente.tagName} con el id ${starPointElemente.id} y la clase ${starPointElemente.className} mi padre es un ${starPointElemente.parentElement.tagName} con el id ${starPointElemente.parentElement.id} y la clase es ${starPointElemente.parentElement.className}, mi hermano es un ${starPointElemente.previousElementSibling.previousElementSibling.tagName} con el id ${starPointElemente.previousElementSibling.previousElementSibling.id} con la clase ${starPointElemente.previousElementSibling.previousElementSibling.className} y mi otro hermano es un ${starPointElemente.previousElementSibling.tagName} con un id ${starPointElemente.previousElementSibling.id} y con la clase ${starPointElemente.previousElementSibling.className}  y su contenido seria ${starPointElemente.previousElementSibling.textContent}`)
+
+
+
+const firstListElement = document.getElementById('first-list')
+const secondListElemnet = document.getElementById('second-list')
+
+firstListElement.children[0].textContent = 'First List - Item 1'
+secondListElemnet.children[0].textContent = 'Second List - Item 1'
