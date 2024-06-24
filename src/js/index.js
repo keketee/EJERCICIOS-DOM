@@ -4,7 +4,7 @@ import '../scss/styles.scss';
 
 const starPointElemente = document.getElementById('start-point')
 starPointElemente.previousElementSibling.textContent = 'cambio titulo'
-starPointElemente.textContent= 'hola'
+starPointElemente.textContent = 'hola'
 
 
 
@@ -15,5 +15,22 @@ console.log(`Soy un ${starPointElemente.tagName} con el id ${starPointElemente.i
 const firstListElement = document.getElementById('first-list')
 const secondListElemnet = document.getElementById('second-list')
 
-firstListElement.children[0].textContent = 'First List - Item 1'
-secondListElemnet.children[0].textContent = 'Second List - Item 1'
+
+const firstElementContent = firstListElement.textContent
+const secondElementContent = secondListElemnet.textContent
+
+firstListElement.textContent = secondElementContent
+secondListElemnet.textContent = firstElementContent
+
+
+
+const allHeader = document.querySelectorAll('header')
+const allH1 = document.querySelectorAll('h1')
+const allTitle = document.querySelectorAll('h1,h2,h3,h4,h4,h5')
+
+console.log(allHeader.length)
+console.log(allH1.length)
+console.log(allTitle.length)
+
+
+
